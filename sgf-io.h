@@ -15,6 +15,7 @@
 
 #define READ_MODE       (0)
 #define WRITE_MODE      (1)
+#define APPEND_MODE     (2)
 
 struct OFILE            /* "Un fichier ouvert"                  */
     {                   /* ------------------------------------ */
