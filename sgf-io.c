@@ -88,21 +88,24 @@ int sgf_getc(OFILE* file) {
  *********************************************************************/
 
 void sgf_append_block(OFILE* f) {
-    
+    TBLOCK b;
+    int adr;
+
     if(f->mode == APPEND_MODE) {
-        //printf("coucou\n");
         write_block(f->last, &f->buffer);
-        
+       
         f->mode = WRITE_MODE;
+        f->length = f->ptr;
+
+        b.inode.length = f->length;
+        b.inode.first = f->first;
+        b.inode.last = f->last;
+
+        write_block(f->inode, &b.data);
         
         return;
     }
     
-    TBLOCK b;
-    int adr;
-
-    //panic("%s: ligne %d: fonction non terminee", __FILE__, __LINE__);
-
     adr = alloc_block();
     assert(adr >= 0);
 
@@ -188,8 +191,8 @@ void sgf_remove(int adr_inode) {
 
     int counter = 0;
     for (int i = 0; i < get_disk_size(); i++) {
-        if (get_fat(i) == FAT_FREE);
-        counter++;
+        if (get_fat(i) == FAT_FREE)
+            counter++;
     }
 
     printf("Nombre de block libres: %d\n", counter);

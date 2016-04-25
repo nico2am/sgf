@@ -9,6 +9,15 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/nico/Documents/Systeme/TP9/sgf-disk.c</file>
+            <file>file:/home/nico/Documents/Systeme/TP9/Makefile</file>
+            <file>file:/home/nico/Documents/Systeme/TP9/sgf-dir.c</file>
+            <file>file:/home/nico/Documents/Systeme/TP9/main.c</file>
+            <file>file:/home/nico/Documents/Systeme/TP9/sgf-io.c</file>
+            <file>file:/home/nico/Documents/Systeme/TP9/sgf-fat.h</file>
+            <file>file:/home/nico/Documents/Systeme/TP9/sgf-fat.c</file>
+            <file>file:/home/nico/Documents/Systeme/TP9/sgf-io.h</file>
+        </group>
     </open-files>
 </project-private>
