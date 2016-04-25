@@ -1,0 +1,39 @@
+cc -ansi -Wall -c -o sgf-dir.o sgf-dir.c
+sgf-dir.c: In function ‘list_directory’:
+sgf-dir.c:184:9: warning: unused variable ‘j’ [-Wunused-variable]
+     int j;
+         ^
+sgf-dir.c:183:9: warning: unused variable ‘adr’ [-Wunused-variable]
+     int adr;
+         ^
+sgf-dir.c:182:15: warning: unused variable ‘b2’ [-Wunused-variable]
+     TBLOCK b, b2;
+               ^
+sgf-dir.c:182:12: warning: unused variable ‘b’ [-Wunused-variable]
+     TBLOCK b, b2;
+            ^
+cc -ansi -Wall -c -o sgf-disk.o sgf-disk.c
+cc -ansi -Wall -c -o sgf-fat.o sgf-fat.c
+cc -ansi -Wall -c -o sgf-io.o sgf-io.c
+sgf-io.c: In function ‘sgf_read_bloc’:
+sgf-io.c:40:9: warning: unused variable ‘adr’ [-Wunused-variable]
+     int adr;
+         ^
+sgf-io.c: In function ‘sgf_append_block’:
+sgf-io.c:88:9: warning: unused variable ‘adr’ [-Wunused-variable]
+     int adr;
+         ^
+sgf-io.c:87:12: warning: unused variable ‘b’ [-Wunused-variable]
+     TBLOCK b;
+            ^
+sgf-io.c: In function ‘sgf_remove’:
+sgf-io.c:135:14: warning: unused variable ‘k’ [-Wunused-variable]
+     int adr, k;
+              ^
+sgf-io.c:135:9: warning: unused variable ‘adr’ [-Wunused-variable]
+     int adr, k;
+         ^
+sgf-io.c:134:12: warning: unused variable ‘b’ [-Wunused-variable]
+     TBLOCK b;
+            ^
+Assemblage de sgf
